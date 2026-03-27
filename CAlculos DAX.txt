@@ -1,0 +1,45 @@
+CAlculos DAX
+EmpresasAtivas = 
+CALCULATE(
+    COUNTROWS(EmpresasAlimentacao),
+    EmpresasAlimentacao[SituacaoCadastral] = "Ativa"
+)
+
+EmpresasBaixadas = 
+CALCULATE(
+    COUNTROWS(EmpresasAlimentacao),
+    EmpresasAlimentacao[SituacaoCadastral] = "Baixada"
+)
+
+EmpresasInaptas = 
+CALCULATE(
+    COUNTROWS(EmpresasAlimentacao), 
+    EmpresasAlimentacao[SituacaoCadastral] = "Inapta" 
+)
+
+EmpresasSuspensas = 
+CALCULATE(
+    COUNTROWS(EmpresasAlimentacao), 
+    EmpresasAlimentacao[SituacaoCadastral] = "Suspensa" 
+)
+
+QuantidadeAberturas = COUNTROWS(EmpresasAlimentacao)
+
+QuantidadeAberturas = COUNTROWS(EmpresasAlimentacao)
+% ativas = divide([EmpresasAtivas], [Total Empresas])
+
+
+
+Nova coluna
+
+
+CNAE_Resumo = 
+SWITCH(
+    TRUE(),
+    CONTAINSSTRING(EmpresasAlimentacao[CNAEDescricao], "Lanchonetes"), "Lanchonetes e similares",
+    CONTAINSSTRING(EmpresasAlimentacao[CNAEDescricao], "domiciliar"), "Alimentação domiciliar",
+    CONTAINSSTRING(EmpresasAlimentacao[CNAEDescricao], "Restaurantes"), "Restaurantes e similares",
+    CONTAINSSTRING(EmpresasAlimentacao[CNAEDescricao], "Bares"), "Bares e similares",
+    CONTAINSSTRING(EmpresasAlimentacao[CNAEDescricao], "Padaria"), "Padarias e similares",
+    "Outros"
+)

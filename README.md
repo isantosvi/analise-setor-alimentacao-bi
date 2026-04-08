@@ -82,9 +82,9 @@ Também busquei evitar excesso de cores e elementos visuais, deixando o dashboar
 
 Os gráficos foram escolhidos de acordo com o tipo de análise:
 
--barras para comparação
--linhas para evolução ao longo do tempo
--mapa para distribuição geográfica
+- barras para comparação
+- linhas para evolução ao longo do tempo
+- mapa para distribuição geográfica
 
 O objetivo foi transformar os dados em informações fáceis de entender e interpretar.
 

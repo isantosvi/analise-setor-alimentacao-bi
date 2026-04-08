@@ -74,12 +74,19 @@ Nesta etapa foram realizados:
 
 ### Modelagem e Visualização
 
-No Power BI, foram desenvolvidas:
+Utilizei o azul como cor principal, por transmitir organização e confiança, além de manter um padrão visual mais limpo. Para destacar situações importantes, como empresas encerradas, usei cores como laranja/vermelho, criando contraste e chamando atenção para pontos críticos.
 
-- Estrutura de relacionamento entre tabelas  
-- Indicadores de negócio  
-- Organização do dashboard em páginas analíticas  
-- Visualizações orientadas à tomada de decisão  
+A estrutura foi organizada em blocos (cards), separando bem cada análise e permitindo uma visualização rápida das informações principais.
+
+Também busquei evitar excesso de cores e elementos visuais, deixando o dashboard mais simples, direto e focado nos dados.
+
+Os gráficos foram escolhidos de acordo com o tipo de análise:
+
+barras para comparação
+linhas para evolução ao longo do tempo
+mapa para distribuição geográfica
+
+O objetivo foi transformar os dados em informações fáceis de entender e interpretar.
 
 ---
 
